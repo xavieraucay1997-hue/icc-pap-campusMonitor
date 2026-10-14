@@ -1,6 +1,7 @@
 package edu.ups.pap.models;
 
 public class Lectura<T> {
+    
     private String idSensor;
     private T valor;
     private String unidad;

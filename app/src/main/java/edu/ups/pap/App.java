@@ -1,6 +1,7 @@
 
 package edu.ups.pap;
-import 
+
+import edu.ups.pap.models.Lectura;
 
 public class App {
     public String getGreeting() {
