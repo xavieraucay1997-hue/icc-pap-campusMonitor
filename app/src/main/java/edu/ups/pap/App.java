@@ -1,13 +1,15 @@
 
 package edu.ups.pap;
-
-import edu.ups.pap.models.Lectura;
+import 
 
 public class App {
+    public String getGreeting() {
+        return "Hello World!";
+    }
+
     public static void main(String[] args) {
         runLectura();
     }
-
     private static void runLectura() {
         Lectura<Double> temperatura = new Lectura<>(
                 "S01", 22.5, "°C");
