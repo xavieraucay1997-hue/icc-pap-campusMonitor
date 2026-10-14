@@ -1,4 +1,7 @@
 package edu.ups.pap.u01;
+
+import java.util.function.Function;
+
 // CLASES GENERICAS
 public class Caja<T> {
     //DATO GENERICO
@@ -12,8 +15,11 @@ public class Caja<T> {
     public T obtener(){
         return valor;
     }
-    
 
+    //Metodo Generico
 
-    
+    public <R> R mapear(Function<T, R> operacion){
+        R resultado = operacion.apply(valor);
+        return resultado;
+    }
 }
